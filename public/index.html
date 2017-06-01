@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=Edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>Sierra | A College ChatBot</title>
+        <link href = "chat-main.css" rel = "stylesheet" type = "text/css">
+        <link href="font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+<body>
+<div class = "nav">
+    <div class = "logo-tab">
+        <p>Sierra | <span>"Hi, There"</span></p>
+    </div>
+    <ul>
+        <li><p>Home</p></li>
+        <li class = "logout"><p>Logout</p></li>
+    </ul>
+</div>
+<div class = "main">
+    <div class = "sub-main" id = "name-display">
+        <div class = "circle">
+            <img src = "robo.svg">
+        </div>
+    </div>
+    <div class = "sub-main" id = "main-chat-window">
+        <div class = "chat-window">
+            <div class = "messages">
+                
+            </div>
+            <div class = "dialog-window">
+                <form id = "send_msg">
+                    <textarea placeholder = "Enter the text"></textarea>
+                    <button type = "button" class = "submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src = "jquery.js" type = "text/javascript"></script>
+<script src="/chat.js"></script>
+
+</body>
+</html>
+
+
+
+
+

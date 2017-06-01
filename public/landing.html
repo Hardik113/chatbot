@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=Edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>Sierra | A College ChatBot</title>
+        <link href = "main.css" rel = "stylesheet" type = "text/css">
+         <link href="font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    </head>
+<body>
+<div class = "nav">
+    <div class = "logo-tab">
+        <p>Sierra | <span>"Hi, There"</span></p>
+    </div>
+    <ul>
+        <li><p>Home</p></li>
+        <li><p>About us</p></li>
+        <li><p>Contact Us</p></li>
+        <li class = "reg"><p>Login</p></li>
+    </ul>
+</div>
+<div class = "main-page" id = "landing-page">
+    <img src = "robo.svg" class = "robo">
+    <div class = "content">
+        <p class = "main-heading">Hey There!</p>
+        <p class = "sub-heading">How may I help you?</p>
+        <p class = "text">
+            This is Sierra! A College chat-bot. It knows everything about your college so if you have any doubt you can always ask it. Answer to all your questions, on the go. Just login once and enjoy the ride.
+            </p> 
+    </div>
+</div>
+<div class = "main-page" id ="about">
+    <p class = "heading">About us</p>
+    <img src = "about.png" class = "about-pic">
+    <p class = "about-content-1">
+        Chatbot is a computer program which conducts a conversation via auditory or textual methods. Such programs are often designed to convincingly simulate how a human would behave as a conversational partner, thereby passing the Turing test. Chatterbots are typically used in dialog systems for various practical purposes including customer service or information acquisition. 
+    </p>
+    <p class = "about-content-2">
+       The College bot project is built using artificial intelligence algorithms that analyses user’s queries and understand user’s message. This System is a web application which provides answer to the query of the student. Students can chat using any format there is no specific format the user has to follow.
+    </p>
+</div>
+
+<div class="main-page" id="cme">
+        <div class="cme-content">
+            <h1>Lets know each other</h1>
+            <p class="cme-tag">If you have any doubt or suggestion let us know</p>
+            <div id = "c_form">
+                <textarea class="ta" name="message" placeholder="Your Message"></textarea>
+                <input type="text" class="cme-form" name="uname" placeholder="Your Name"><br>
+                <input type="text" class="cme-form" name="uemail" placeholder="Your Email"><br>
+                <input type="text" class="cme-form" name="uphone" placeholder="Your Phone">
+                <button type = "button" class="cme-submit">Send Message</button>
+            </div>
+        </div>
+</div>
+
+<div class="footer">
+    <div class="closure">
+            <div class="social-label"><i class="fa fa-facebook"></i></div>
+            <div class="social-label"><i class="fa fa-twitter"></i></div>
+            <div class="social-label"><i class="fa fa-instagram"></i></div>
+    </div>
+</div>
+<div class="modal-box">
+    <div class="modal-content pop">
+        <span class="close">&times;</span>
+        <p><span class="reg-form">Register</span> | <span class="log-form">Login</span></p>
+        <div id ="regf">
+            <input type="text" class="oform"name="regno" placeholder="Registration number">
+            <input type="text" class="oform" name="full_name" placeholder="Full Name">
+            <input id = "r_email" type="text" class="oform" name="email" placeholder="Email">
+            <input id = "r_pass" type="password" class="oform" name="pass" placeholder="Password">
+            <input type="text" class="oform" name="mob" placeholder="Mobile Number">
+            <button id = "reg_button" type = "button" class="submit">Submit</button>
+        </div>
+        <div id ="logf">
+            <input id = "l_email" type="text" class="oform" name="email" placeholder="Email">
+            <input id = "l_pass" type="password" class="oform" name="pass" placeholder="Password">
+            <button id = "log_button" type = "button" class="submit">Submit</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA9Y5Xri9VBxb2XtulAPNzo0x491b-DvKo",
+    authDomain: "software-f28d2.firebaseapp.com",
+    databaseURL: "https://software-f28d2.firebaseio.com",
+    projectId: "software-f28d2",
+    storageBucket: "software-f28d2.appspot.com",
+    messagingSenderId: "130046363845"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src = "jquery.js"></script>
+<script src = "main.js"></script>
+</body>
+</html>

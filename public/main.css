@@ -1,0 +1,436 @@
+@font-face{
+    font-family:rt;
+    src:url("roboto.thin.ttf");
+}
+
+
+@font-face{
+    font-family:rb;
+    src:url("roboto.bold.ttf");
+}
+
+body,html{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.nav{
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    background: #0097A7;
+    z-index: 99;
+    -webkit-box-shadow: 3px 1px 17px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 1px 17px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 1px 17px 0px rgba(0,0,0,0.3);
+}
+
+.logo-tab{
+    display: inline-table;
+    height: 100%;
+    width: 40%;
+    vertical-align: top;
+}
+
+.logo-tab p{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 60px;
+    color: white;
+    font-family: rb;
+}
+
+.logo-tab span{
+    font-size:40px;
+}
+
+.nav ul{
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin:0;
+}
+
+.nav ul li{
+    height: 100%;
+    width: 23%;
+    display: inline-table;
+    text-align:center;
+}
+
+.nav ul li p{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: rb;
+    font-size:20px;
+    color: white;
+}
+
+.main-page{
+    height: 100%;
+    width: 100%; 
+    overflow: hidden;
+}
+
+#landing-page{
+    background: rgb(98,230,219);
+    position: relative;
+}
+
+#about {
+    background: rgb(98,230,219);
+    position: relative;
+    height: 90%;
+}
+
+.robo {
+    position: absolute;
+    height:60%;
+    width: auto;
+    top: 25%;
+    left: 10%;
+}
+
+.content{
+    position: absolute;
+    height: 60%;
+    width: 40%;
+    top: 25%;
+    right: 5%;
+}
+
+.main-heading{
+    font-size: 80px;
+    color: white;
+    font-family: rb;
+}
+
+.sub-heading{
+    font-size: 40px;
+    color: white;
+    font-family: rb;
+    margin-top: -10%;
+}
+
+.text{
+    font-family: rb;
+    color: white;
+    font-size: 15px;
+}
+
+.about-pic {
+    height:80%;
+    width: auto;
+    position: absolute;
+    right: -15%;
+    top: 23%;
+}
+
+.heading{
+    font-size: 90px;
+    color: white;
+    font-family: rb;
+    overflow: hidden;
+    padding-left: 10%;
+}
+
+.about-content-1 {
+    font-size: 20px;
+    font-family: rb;
+    position:absolute;
+    left:5%;
+    top:30%;
+    width: 60%;
+    color: white
+}
+
+.about-content-2 {
+    font-size: 20px;
+    font-family: rb;
+    position:absolute;
+    left:5%;
+    top:50%;
+    width: 40%;
+    color: white
+}
+
+.footer{
+    height:auto;
+    width:100%;
+    background:rgba(0,0,0,0.9);
+    overflow:hidden;
+}
+
+
+.faq-content{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+}
+
+.faq-head{
+    font-family:rb;
+    font-size:50px;
+    color:white;
+    margin:0 2%;
+    margin-top:2%;
+    font-weight:bold;
+}
+
+.ques-bank{
+    height:auto;
+    width:98%;
+    margin:0 auto;
+}
+
+.ques-tile{
+    height:15%;
+    width:32.85%;
+    display:inline-block;
+    vertical-align:top;
+    margin:0.1%;
+}
+
+.ques{
+    font-size:17px;
+    font-family:rt;
+    color:white;
+    font-weight:bold;
+}
+
+.ans{
+    font-size:15px;
+    font-family:rt;
+    color:white;
+    margin:0 2%;
+}
+
+.closure{
+    height:auto;
+    width:100%;
+    margin:5% auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.closure p{
+    font-family:rb;
+    font-size:50px;
+    color:white;
+    padding-right:5%;
+}
+
+.social{
+    height:80%;
+    width:40%;
+    background:white;
+}
+
+.social-label{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    background:black;
+    display:inline-block;
+    vertical-align:top;
+    margin:0 1%;
+    text-align:center;
+    font-size:30px;
+}
+
+.social-label i{
+    line-height:60px;
+    vertical-align:middle;
+    color:white;
+}
+
+.name{
+    width:100%;
+    height:auto;
+    margin-top: -3%;
+}
+
+.name p{
+    color:white;
+    text-align:left;
+    font-family:rb;
+    font-size:15px;
+    text-align:center;
+}
+
+.name span{
+    font-weight:bold;
+    color:white;
+    font-size:17px;
+}
+
+.modal-box{
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,0.9);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    align-items:center;
+    justify-content:center;
+    display:none;
+
+}
+
+.modal-content{
+    background:white;
+    height:auto;
+    width:50%;
+    animation:pop 0.15s ease-in;
+    position:relative;
+}
+
+.modal-content p{
+    font-size:50px;
+    font-family:rb;
+    color:rgb(22,36,43);
+    text-align:center;
+    cursor: pointer;
+}
+
+#regf,#logf{
+    height:auto;
+    width:80%;
+    margin:0 auto;
+    margin-top:-5%;
+}
+
+.log-form {
+    color: #0097A7;
+}
+
+.reg-form {
+    color: rgb(98,230,219);
+}
+
+.oform{
+    height:5%;
+    width:100%;
+    margin:1% auto;
+    background:none;
+    border:none;
+    outline:none;
+    border-bottom:1px solid rgb(22,36,43);
+    color:rgb(22,36,43);
+    font-size:20px;
+}
+
+
+
+.submit{
+    height:5%;
+    width:30%;
+    margin-top:4%;
+    font-size:20px;
+    background:rgb(22,36,43);
+    color:white;
+    font-family:rb;
+    margin-left:35%;
+    margin-bottom: 5%;
+}
+
+.close{
+    position:absolute;
+    color:rgb(22,36,43);
+    font-size:30px;
+    right:2%;
+    top:2%;
+    cursor:pointer
+}
+
+#logf{
+    display: block;
+}
+
+#regf{
+    display: none;
+}
+
+#cme{
+     background:rgb(98,230,219);
+}
+
+.cme-content{
+    height:90%;
+    width:100%;
+    margin:2% auto;
+    position:relative;
+}
+
+.cme-content h1{
+    color:white;
+    text-align: center;
+    font-family: rb;
+    font-size: 70px;
+}
+
+.cme-tag{
+    text-align:center;
+    color:white;
+    font-family:rb;
+    font-size:25px;
+    margin:0 4%;
+}
+
+#c_form{
+    height:70%;
+    width:80%;
+    margin:5% auto;
+}
+
+.ta{
+    float:right;
+    height:80%;
+    width:45%;
+    background:none;
+    border:2px solid white;
+    font-size:20px;
+    outline:none;
+    padding-top:1%;
+    padding-left:1%;
+    color: white;
+}
+
+
+.cme-form{
+    width:50%;
+    outline:none;
+    border:none;
+    font-size:20px;
+    border-bottom:1px solid white;
+    background:none;
+    padding:1%;
+    margin-bottom:5%;
+    color:white;
+    position:relative;
+}
+
+.cme-submit{
+    height:15%;
+    width:20%;
+    color:white;
+    background:#0097A7;
+    outline:none;
+    border:none;
+    font-family:rt;
+    font-size:25px;
+    margin-left:13%;
+    border-radius:4px;
+}
+
+.cme-form::placeholder,.ta::placeholder{
+    color: white;
+}
+
+

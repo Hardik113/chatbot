@@ -1,0 +1,199 @@
+@font-face{
+    font-family:rt;
+    src:url("roboto.thin.ttf");
+}
+
+
+@font-face{
+    font-family:rb;
+    src:url("roboto.bold.ttf");
+}
+
+body,html{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.nav{
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    background: #0097A7;
+    z-index: 99;
+    -webkit-box-shadow: 3px 1px 17px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 1px 17px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 1px 17px 0px rgba(0,0,0,0.3);
+}
+
+
+
+.logo-tab{
+    display: inline-table;
+    height: 100%;
+    width: 40%;
+    vertical-align: top;
+}
+
+.logo-tab p{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 60px;
+    color: white;
+    font-family: rb;
+}
+
+.logo-tab span{
+    font-size:40px;
+}
+
+.nav ul{
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin:0;
+}
+
+.nav ul li{
+    height: 100%;
+    width: 23%;
+    display: inline-table;
+    text-align:center;
+}
+
+.nav ul li p{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: rb;
+    font-size:20px;
+    color: white;
+}
+
+.main{
+    height: 100%;
+    width: 100%; 
+    background: rgb(98,230,219);
+    font-size: 0;
+    margin: 0;
+}
+
+.sub-main {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+#name-display {
+    width: 40%;
+}
+
+#main-chat-window {
+    width: 60%;
+}
+
+.circle {
+    height: 50%;
+    width: 65%;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.circle img {
+    height: 70%;
+    width: 70%;
+    margin-left:20%;
+    margin-top:15%;
+}
+
+.chat-window {
+    height: 85%;
+    width: 95%;
+    margin: 0 auto;
+    background: white;
+    margin-top: 13%;
+}
+
+.messages {
+    height: 80%;
+    width: 100%;
+    overflow: auto;
+}
+
+.dialog-window {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+textarea {
+    height: 70%;
+    width: 90%;
+    border-radius: 5px;
+    border:2px solid lightslategrey;
+    font-size: 15px;
+    color: grey;
+    font-family: rt;
+    padding: 5px 0 0 10px;
+}
+
+textarea::placeholder {
+    font-size: 15px;
+    font-family: rt;
+}
+
+.submit {
+    height: 20%;
+    width: 15%;
+    background: rgb(98,230,219);
+    color: white;
+    font-family: rt;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    position: absolute;
+    left: 5%;
+    border-radius: 5px;
+    bottom: 5%;
+}
+
+.msg {
+    width:45%;
+    height:auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: 2px solid lightslategrey;
+}
+
+#bot {
+    margin-left: 2%;
+}
+
+#user {
+    margin-left: 52%;
+}
+
+.head {
+    font-size: 15px;
+    color: block;
+    font-family: rb;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.msg-con {
+    font-size: 13px;
+    color: black;
+    font-family: rb;
+    margin-top: -1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
